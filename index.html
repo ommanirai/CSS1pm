@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        /* element selector */
+        body{
+            background-color: blue;
+
+        }
+        h1{
+            color: red;
+            background-color: aqua;
+        }
+        /* class selector */
+        .first{
+            color: yellow;
+            /* background-color: black; */
+        }
+        /* id selector */
+        #second{
+            color: black;
+        }
+        .custom-class{
+            font-size: 60px;
+        }
+        .next-custom{
+            font-size: 100px;
+        }
+
+
+    </style>
+    <!-- 
+        css:
+        cascading style sheet
+        used to style the html element, pages
+
+        syntax:
+        selector{
+            attribute: value;
+            attribute: value;
+            attribute: value;
+        }
+
+        selector: all the html elements, id, class
+        types of selector:
+        1. element selector:all the html elements
+        eg. h1, h6, p, div, span, form, input, table, img, video,audio
+        2. class selector: user defined classes
+            denoted by dot(.)
+            multiple classes can be used
+
+        3. id selector: user defined id's
+            denoted by hash(#)
+            only one id/ only single id can be used
+
+            priority:
+            id > class > element
+    -->
+</head>
+<body>
+    <h1>Heading First</h1>
+    <h1 class="first">Heading Second</h1>
+    <h1 class="first custom-class next-custom" id="second">Heading Third</h1>
+</body>
+</html>
