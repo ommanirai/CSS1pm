@@ -1,0 +1,13 @@
+h3{
+    background-color:brown;
+}
+
+.div1{
+    height: 500px;
+    width: 500px;
+    background-color: aquamarine;
+    /* margin: space between the two boxes */
+    margin: 20px;
+    /*  padding: space within a box  */
+    padding: 20px;
+}

@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS</title>
+    <!-- external css -->
+    <link rel="stylesheet" href="index.css">
+    <!-- internal css -->
     <style>
         /* element selector */
-        body{
+        /* body{
             background-color: blue;
 
-        }
+        } */
         h1{
             color: red;
             background-color: aqua;
@@ -47,7 +50,7 @@
 
         selector: all the html elements, id, class
         types of selector:
-        1. element selector:all the html elements
+        1. element selector: all the html elements
         eg. h1, h6, p, div, span, form, input, table, img, video,audio
         2. class selector: user defined classes
             denoted by dot(.)
@@ -59,11 +62,29 @@
 
             priority:
             id > class > element
+
+
+        types of css:
+        1. inline css
+        -> within a html tag
+        2. internal css
+        -> within a file
+        3. external css
+        -> outside the file
     -->
 </head>
 <body>
-    <h1>Heading First</h1>
+    <h1 >Heading First</h1>
     <h1 class="first">Heading Second</h1>
     <h1 class="first custom-class next-custom" id="second">Heading Third</h1>
+    <!-- inline css -->
+    <h2 style="color: violet;" >Heading Second</h2>
+    <h3>External css</h3>
+    <div class="div1">
+        division first
+    </div>
+    <div class="div1">
+        division second
+    </div>
 </body>
 </html>
