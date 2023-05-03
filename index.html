@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,27 +15,39 @@
             background-color: blue;
 
         } */
-        h1{
+        h1 {
             color: red;
             background-color: aqua;
         }
+
         /* class selector */
-        .first{
+        .first {
             color: yellow;
             /* background-color: black; */
         }
+
         /* id selector */
-        #second{
+        #second {
             color: black;
         }
-        .custom-class{
+
+        .custom-class {
             font-size: 60px;
         }
-        .next-custom{
+
+        .next-custom {
             font-size: 100px;
         }
 
-
+        .div1 {
+            height: 300px;
+            width: 300px;
+            background-color: aquamarine;
+            /* margin: space between the two boxes */
+            margin: 20px;
+            /*  padding: space within a box  */
+            padding: 20px;
+        }
     </style>
     <!-- 
         css:
@@ -73,12 +86,13 @@
         -> outside the file
     -->
 </head>
+
 <body>
-    <h1 >Heading First</h1>
+    <h1>Heading First</h1>
     <h1 class="first">Heading Second</h1>
     <h1 class="first custom-class next-custom" id="second">Heading Third</h1>
     <!-- inline css -->
-    <h2 style="color: violet;" >Heading Second</h2>
+    <h2 style="color: violet;">Heading Second</h2>
     <h3>External css</h3>
     <div class="div1">
         division first
@@ -87,4 +101,5 @@
         division second
     </div>
 </body>
+
 </html>
