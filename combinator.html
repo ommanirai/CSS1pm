@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator</title>
+    <style>
+        /*
+    combinator:
+    types:
+    1. grouping selector(,)
+    2. descendent selector(space)
+    3. chlld selector(>)
+    4. general sibling selector(~)
+    5. adjacent sibling selector(+)
+    */
+        /* 1. grouping selector */
+        h1,
+        .parent1,
+        .parent2 {
+            color: red;
+        }
+
+        /* 2. descendent selector */
+        .parent2 div {
+            color: aqua;
+        }
+
+        /* 3. child selector */
+        .parent2>div {
+            color: yellow;
+        }
+        /* 4. general siblings */
+        .grandchild1~div{
+            color: slateblue;
+        }
+        .grandchild1+div{
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Heading First</h1>
+    <div class="parent1">Parent First</div>
+    <div class="parent2">Parent Second
+        <div class="child1">Child First</div>
+        <div class="child2">Child second
+            <div class="grandchild1">Grand child first</div>
+            <div class="grandchild2">Grand Child Second</div>
+            <div class="grandchild3">Grand Child third</div>
+            <div class="grandchild4">Grand Child fourth</div>
+            <div class="grandchild5">Grand Child fifth</div>
+        </div>
+    </div>
+</body>
+
+</html>
