@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        /*
+        types of position:
+        1. static: default
+        2. relative
+        3. absolute
+            a. absolute to root/browser
+            b. absolute to parent
+        4. sticky
+        5. fixed
+        */
+        .container {
+            width: 500px;
+            height: 500px;
+            background-color: green;
+            position: fixed;
+            /* top, bottom, left, right */
+            /* top: 50px; */
+            /* left: 50px; */
+            right: 400px;
+            top: 400px;
+        }
+
+        .demo {
+            width: 700px;
+            height: 3000px;
+            background-color: red;
+            position: relative;
+        }
+
+        .sticky {
+            background-color: orange;
+            width: 100%;
+            height: 50px;
+            position: sticky;
+            top: 0;
+            bottom: 0;
+        }
+
+        .demo1 {
+            width: 700px;
+            height: 3000px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo">
+        <div class="container"></div>
+    </div>
+    <div class="sticky"></div>
+    <div class="demo1"></div>
+    <div class="demo">
+        <div class="container"></div>
+    </div>
+</body>
+
+</html>
