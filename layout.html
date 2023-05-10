@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .header{
+            width: 100%;
+            background-color: aqua;
+            padding: 8px;
+        }
+        .main{
+            display: flex;
+            width: 100%;
+        }
+        .left{
+            width:25%;
+            background-color: yellow;
+            height: 400px;
+        }
+        .right{
+            width: 75%;
+            background-color: violet;
+            height: 400px;
+        }
+        .right-top{
+            background-color: tomato;
+            height: 200px;
+        }
+        .right-bottom{
+            width: 100%;
+            display: flex;
+        }
+        .right-bottom-left{
+            width: 50%;
+            background-color: blue;
+            height: 200px;
+        }
+        .right-bottom-right{
+            width: 50%;
+            background-color: violet;
+            height: 200px;
+        }
+        .footer{
+            width: 100%;
+            background-color: chartreuse;
+            padding: 8px;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            justify-content: space-evenly;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li>Home</li>
+            <li>Gallery</li>
+            <li>Contact</li>
+            <li>About</li>
+            <li>Map</li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="left">left</div>
+        <div class="right">
+            <div class="right-top">right top</div>
+            <div class="right-bottom">
+                <div class="right-bottom-left">right bottom left</div>
+                <div class="right-bottom-right">right bottom right</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">footer</div>
+</body>
+</html>
